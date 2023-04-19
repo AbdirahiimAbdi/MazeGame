@@ -1,0 +1,50 @@
+[
+    {
+        "passages": [
+            {
+                "isExit": false,
+                "direction": "south"
+            },
+            {
+                "isExit": false,
+                "direction": "north"
+            }
+        ],
+        "items": {
+            "threats": [{ "type": "one-eye" }],
+            "treasure": [{ "name": "money", "value": "1000" }]
+        }
+    },
+    {
+        "passages": [
+            {
+                "isExit": false,
+                "direction": "south"
+            },
+            {
+                "isExit": false,
+                "direction": "east"
+            }
+        ],
+        "items": {
+            "threats": [{ "type": "vamp" }],
+            "treasure": [{ "name": "money", "value": "1500" }]
+        }
+    },
+    {
+        "passages": [
+            {
+                "isExit": false,
+                "direction": "east"
+            },
+            {
+                "isExit": true,
+                "direction": "west"
+            }
+        ],
+        "items": {
+            "threats": [{ "type": "alien" }, { "type": "dragon" }],
+            "treasure": [{ "name": "money", "value": "5000" }]
+        }
+    }
+]
