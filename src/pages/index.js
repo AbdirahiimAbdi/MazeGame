@@ -21,8 +21,12 @@ export default function Home() {
             {pageType == 'maze' && (
                 <Maze
                     wealth={wealth}
-                    currentRoom={currentRoom}
                     maze={maze}
+                    setWealth={setWealth}
+                    currentRoom={currentRoom}
+                    setCurrentRoom={setCurrentRoom}
+                    setPageType={setPageType}
+                    pageType={pageType}
                 />
             )}
             {pageType == 'end' && <End wealth={wealth} />}
@@ -31,5 +35,5 @@ export default function Home() {
 }
 
 const getRandomInt = (max) => {
-    return Math.floor(Math.random() * max);
+    return Math.floor(Math.random() * max)
 }

@@ -3,23 +3,7 @@
         "passages": [
             {
                 "isExit": false,
-                "direction": "south"
-            },
-            {
-                "isExit": false,
                 "direction": "north"
-            }
-        ],
-        "items": {
-            "threats": [{ "type": "one-eye" }],
-            "treasure": [{ "name": "money", "value": "1000" }]
-        }
-    },
-    {
-        "passages": [
-            {
-                "isExit": false,
-                "direction": "south"
             },
             {
                 "isExit": false,
@@ -27,8 +11,30 @@
             }
         ],
         "items": {
-            "threats": [{ "type": "vamp" }],
-            "treasure": [{ "name": "money", "value": "1500" }]
+            "threats": [
+                { "type": "THE ONE-EYE", "image": "/One-eye.png" },
+                { "type": "VAMP", "image": "/Vamp.png" }
+            ],
+            "treasure": [{ "name": "money", "value": 1000 }]
+        }
+    },
+    {
+        "passages": [
+            {
+                "isExit": false,
+                "direction": "west"
+            },
+            {
+                "isExit": false,
+                "direction": "north"
+            }
+        ],
+        "items": {
+            "threats": [
+                { "type": "VAMP", "image": "public/threats/Vamp.png" },
+                { "type": "ALIEN", "image": "public/threats/Alien.png" }
+            ],
+            "treasure": [{ "name": "money", "value": 1500 }]
         }
     },
     {
@@ -39,28 +45,35 @@
             },
             {
                 "isExit": false,
-                "direction": "north"
+                "direction": "south"
             }
         ],
         "items": {
-            "threats": [{ "type": "vamp" }],
-            "treasure": [{ "name": "money", "value": "1500" }]
+            "threats": [
+                { "type": "ALIEN", "image": "/Alien.png" },
+                { "type": "DRAGON", "image": "/Dragon.png" }
+            ],
+            "treasure": [{ "name": "money", "value": 5000 }]
         }
     },
     {
         "passages": [
             {
                 "isExit": false,
-                "direction": "north"
+                "direction": "south"
+            },
+            {
+                "isExit": false,
+                "direction": "west"
             },
             {
                 "isExit": true,
-                "direction": "west"
+                "direction": "east"
             }
         ],
         "items": {
-            "threats": [{ "type": "alien" }, { "type": "dragon" }],
-            "treasure": [{ "name": "money", "value": "5000" }]
+            "threats": [{ "type": "VAMP", "image": "/Vamp.png" }],
+            "treasure": [{ "name": "money", "value": 1500 }]
         }
     }
 ]
