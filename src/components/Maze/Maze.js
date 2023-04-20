@@ -85,7 +85,7 @@ export default function Maze({ wealth, maze, setWealth, currentRoom, setCurrentR
                     )
                 })}
             </div>
-            <img src="public/threats/Player.png" alt="Player" className="absolute bottom-16" />
+            <img src="/Player.png" alt="Player" className="absolute bottom-16" />
             {narratorType && <NarratorBox narration={narratorType} />}
             {action && (
                 <ActionBox

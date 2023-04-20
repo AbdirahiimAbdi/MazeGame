@@ -31,8 +31,8 @@
         ],
         "items": {
             "threats": [
-                { "type": "VAMP", "image": "public/threats/Vamp.png" },
-                { "type": "ALIEN", "image": "public/threats/Alien.png" }
+                { "type": "VAMP", "image": "/Vamp.png" },
+                { "type": "ALIEN", "image": "/Alien.png" }
             ],
             "treasure": [{ "name": "money", "value": 1500 }]
         }

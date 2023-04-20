@@ -10,7 +10,7 @@ export default function End({ wealth }) {
                 <span className="text-xs text-[#D9C480]">You’ve finished with a total of:</span>
                 <span className="text-base text-[#D9C480]">${wealth}</span>
             </div>
-            <img src="public/threats/Player.png" alt="Player" className="absolute bottom-16" />
+            <img src="/Player.png" alt="Player" className="absolute bottom-16" />
             <div className="absolute bottom-0 h-[30px] w-[100px] bg-[#433A3A]"></div>
             <span
                 className="absolute bottom-6 right-6 text-[#E56969] hover:text-[#433A3A] hover:cursor-pointer"
