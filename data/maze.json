@@ -38,6 +38,22 @@
                 "direction": "east"
             },
             {
+                "isExit": false,
+                "direction": "north"
+            }
+        ],
+        "items": {
+            "threats": [{ "type": "vamp" }],
+            "treasure": [{ "name": "money", "value": "1500" }]
+        }
+    },
+    {
+        "passages": [
+            {
+                "isExit": false,
+                "direction": "north"
+            },
+            {
                 "isExit": true,
                 "direction": "west"
             }
