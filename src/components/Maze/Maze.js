@@ -7,17 +7,26 @@ import Treasure from './Treasure'
 import { useState, useEffect } from 'react'
 
 export default function Maze({ wealth, maze, setWealth, currentRoom, setCurrentRoom, setPageType }) {
+    // narratorType will control what the narratorBox component will show the user
     const [narratorType, setNarratorType] = useState(null)
+    // action will control what the actionBox component will show the user
     const [action, setAction] = useState(null)
+    // allow state will control whether the passages can be walked through or not
     const [allow, setAllow] = useState(false)
 
     // Show NarratorBox when player removes all threats
     useEffect(() => {
+        // Set a delay before so that user can read last message before new one pops up
         setTimeout(() => {
+            // Check to see whether all threats have been eliminated
             if (!maze[currentRoom].threatsCleared) {
+                // Checks whether the threats div has any children as they would have been deleted if eliminated
                 if (document.getElementById('threats')?.childElementCount === 0) {
+                    // Add an threatsCleared item to the current rooms object, this prevents the Narrator message below from keep showing
                     maze[currentRoom].threatsCleared = true
+                    // Sets the allow state to based on the amount of threats, this allows passages to be unlocked
                     setAllow(document.getElementById('threats').childElementCount === 0)
+                    // Narrator message is changed
                     setNarratorType({
                         title: 'Nice',
                         line1: `Looks like there's no threats in this room.`,

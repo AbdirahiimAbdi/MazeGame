@@ -5,6 +5,7 @@ export default function MainMenu({ setPageType, pageType }) {
             <span
                 className="text-base text-[#E56969] hover:text-[#433A3A] hover:cursor-pointer"
                 onClick={() => {
+                    // When clicked the maze page will show
                     setPageType('maze')
                 }}
             >

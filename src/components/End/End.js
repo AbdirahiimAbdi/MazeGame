@@ -14,6 +14,7 @@ export default function End({ wealth }) {
             <div className="absolute bottom-0 h-[30px] w-[100px] bg-[#433A3A]"></div>
             <span
                 className="absolute bottom-6 right-6 text-[#E56969] hover:text-[#433A3A] hover:cursor-pointer"
+                // Onclick the page will reload and start the game again
                 onClick={() => router.reload()}
             >
                 Restart

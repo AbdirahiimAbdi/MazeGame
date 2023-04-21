@@ -10,9 +10,13 @@ import End from '../components/End/End.js'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+    // Declaration of pageType state which will affect what will be shown on the page
     const [pageType, setPageType] = useState('menu')
+    // wealth state created so that it can be shown on both the maze page and the end page
     const [wealth, setWealth] = useState(0)
+    // maze state declared as imported maze.json
     const [maze, setMaze] = useState(Map)
+    // Current room of which the user is in
     const [currentRoom, setCurrentRoom] = useState(getRandomInt(maze.length - 1))
 
     return (

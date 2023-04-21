@@ -1,4 +1,5 @@
 export default function Treasure({ index, treasure, setAction, setNarratorType, room, setWealth, allow }) {
+    // Deletes the treasure from the treasure array to remove it from the room
     const deleteTreasure = (index) => {
         delete room.items.treasure[index]
         setAction(null)
