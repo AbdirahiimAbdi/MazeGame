@@ -1,5 +1,3 @@
-import Wealth from './Wealth'
-
 export default function Passage({ isExit, direction, setCurrentRoom, allow, setPageType }) {
     // Dependant on which direction the passage will lead to will manipulate its styling
     // This is for obvious reasons like a passage east would need to stand against the wall whereas a north passage will be flat against the top
